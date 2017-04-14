@@ -1,0 +1,44 @@
+.scratchCard {
+	position: relative;
+	width: 85.6%;
+	height: 90px;
+	margin: -5px auto;
+	background: url(../img/ggl.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+.scratchCard .scratchCardCanvas {
+	position: absolute;
+	top: 2px;
+	left: 2.5%;
+	width: 95%;
+	height: 82px;
+	line-height: 82px;
+	text-align: center;
+	z-index: 2;
+}
+.scratchCard .info {
+	position: absolute;
+	top: 2px;
+	left: 2.5%;
+	width: 95%;
+	height: 82px;
+	text-align: center;
+}
+.scratchCard .info span {
+	display: block;
+	font-size: 18px;
+}
+..scratchCard .prompt {
+	line-height: 40px;
+}
+.scratchCard .info span.btn {
+	position: relative;
+	width: 50%;
+	height: 35px;
+	line-height: 35px;
+	background: #df412b;
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 auto;
+	z-index: 1;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <link href="css/jquery.scratchCard.css" rel="stylesheet" type="text/css">
+	    <style type="text/css">
+	    	body{
+	    		background: #df412b;
+	    		position: relative;
+	    	}
+	    </style>
+	</head>
+	<body>
+		<div  id="scratchCard1">
+		</div>
+		<br><br><br><br><br><br>
+		<div  id="scratchCard2">
+		</div>
+		<script  src="js/jquery-1.8.3.min.js"></script>
+		<script  src="js/jquery.scratchCard.js"></script>
+
+
+
+		<script>
+
+
+		$(document).ready(function(){
+
+			$("#scratchCard1").scratchCard({
+				// backgroundColor:'#ffffff',
+				// tipsColor:'#000000',
+				tips:'刮我中大奖',
+				btnCotent:'中奖啦',
+				btnCallBack:function(){
+					alert('前往领奖')
+				},
+				prompt:'恭喜你中大奖了',
+			});
+
+
+			$("#scratchCard2").scratchCard({
+				backgroundColor:'#2222b7',
+				tipsColor:'#fff',
+				tips:'刮我中大奖',
+				btnCotent:'中奖啦',
+				btnCallBack:function(){
+					alert('前往领奖2')
+				},
+				prompt:'恭喜你中大奖了',
+			});
+
+		});
+			//控制刮卡次数
+			// var t = 1; 
+			//初始化所有数据并且随机产生奖品
+			// var initialize  = function () {
+				// // 剩余刮卡次数
+				// $('.num1').html(4-t);
+				// //随机数
+				// function getRandomNum(lbound, ubound) {
+				// 	return (Math.floor(Math.random() * (ubound - lbound)) + lbound);
+				// }
+				// var r = getRandomNum(1,100);
+				// var btn = document.getElementsByClassName("btn");
+				// for(var i=0; i<btn.length; i++){
+				// 	btn[i].style.zIndex = '1';
+				// }
+				// document.getElementById("no").style.display = "none";
+				// document.getElementById("ok").style.display = "none";
+				
+				// // 初始化涂抹面积
+				// isOk = 0;
+				
+				
+				// if(r<t*33){
+				// 	document.getElementById("prompt").innerHTML="恭喜您，中奖了！"
+				// 	var ok =document.getElementById("ok");
+				// 	ok.style.display = "block";
+				// 	//点击领取奖品
+				// 	ok.onclick = function () {
+				// 		window.location.href="prize.html"
+				// 	};
+				// }else{
+					// document.getElementById("prompt").innerHTML="很遗憾，未中奖！"
+					// document.getElementById("no").style.display = "block";
+				// }
+			// };
+		
+
+			/* 页面加载后开始初始化画布 */
+			// window.onload = function(){	
+				// initCanvas();
+			// }
+
+			
+
+		
+			
+			//没有中奖再来一次
+			// $("#no").click(function() {
+			// 	if(t>3){
+			// 		//因该弹出遮罩层提示您的次数已经用完了
+			// 		$('.pop1').show();
+			// 		$('.pop1 img').click(function(){
+			// 			$('.pop1').hide();
+			// 		})
+			// 	}else{
+			// 		t++;
+			// 		//初始化按钮
+			// 		document.getElementById("no").style.display = "none";
+			// 		document.getElementById("ok").style.display = "none";
+			// 		window.onload();
+			// 		initCanvas();
+			// 	}
+			// });
+			
+
+		</script>
+			
+	</body>
+
+</html>
