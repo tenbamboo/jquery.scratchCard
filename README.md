@@ -1,7 +1,7 @@
 # jquery.scratchCard
 刮刮乐
 
-##参数
+## 参数
  options.backgroundColor //涂层背景颜色
 
  options.tipsColor //涂层显示文字颜色
@@ -16,11 +16,13 @@
 
 
 
-##完整初始化
+## 完整初始化
 //demo1
+
 	$(dom).scratchCard();
 
 //demo2
+
 	$(dom).scratchCard({
 	  backgroundColor:'#ffffff',
 	  tipsColor:'#000000',
@@ -28,9 +30,9 @@
 	  btnCotent:'中奖啦',
 	  btnCallBack:function(){},
 	  prompt:'恭喜你中大奖了',
- });
+	});
 
- ##方法
+ ## 方法
 
 //重新设置按钮属性和提示信息
 	$(dom).scratchCard('setBtnAndPrompt',{
@@ -38,5 +40,5 @@
 		 prompt:'遗憾没中奖',
 		 btnCallBack:function(){},
 	}); 
-	
+
 	$(dom).scratchCard('reset'); //重画涂层
