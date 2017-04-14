@@ -35,6 +35,7 @@
  ## 方法
 
 //重新设置按钮属性和提示信息
+
 	$(dom).scratchCard('setBtnAndPrompt',{
 		 btnCotent:'再试一次',
 		 prompt:'遗憾没中奖',
